@@ -25,7 +25,7 @@ The amount you should bet on the first phase is dependant on how many betting ph
 sum = 0
 for n = 1 to phases
   sum = sum + (n * payout)
-fraction = 1 / sum
+bet = 1 / sum
 ```
 Math notation:
 <p align="center"><img src="/tex/d550e41ad0ce2674f6291a5f5a4774da.svg?invert_in_darkmode&sanitize=true" align=middle width=180.3947277pt height=41.0933358pt/></p>
@@ -45,4 +45,4 @@ The risk of going bankrupt is simply the chance of failure multiplied by itself 
 <p align="center"><img src="/tex/cba01541b5d1d02b52b0e10b98e5be88.svg?invert_in_darkmode&sanitize=true" align=middle width=192.8803371pt height=33.81208709999999pt/></p>
 
 This makes the risk a bit arbitrary because its defined by how many phases you should do so instead we'll work out how many phases you should do to meet a desired risk thershold.
-<p align="center"><img src="/tex/8a27c350aa049f771eb59819fdf9423a.svg?invert_in_darkmode&sanitize=true" align=middle width=182.80224435pt height=43.0970364pt/></p>
+<p align="center"><img src="/tex/b1f7870c2d520bd84e02fe839ac7d19e.svg?invert_in_darkmode&sanitize=true" align=middle width=192.84801855pt height=44.01027344999999pt/></p>
