@@ -14,6 +14,11 @@ This calculator is for a slightly modified version thats more applicable to more
 | 2     | 12   | 3   | (12 - 3) + (3 * 3) = 15 | 9            |
 | 3     | 9    | 9   | (9 - 9) + (9 * 3) = 15  | 0            |
 
-Your profit per round following this system is $$bankroll - bet + (bet\times payout)$$. If we treat bankroll as `1` and the bet as the initial bet fraction the profit is $$1 - bet + (bet\times payout)$$.
+Your profit per round following this system is:
+$$bankroll - bet + (bet\times payout)$$
 
-The amount you should bet on the first phase is dependant on how many betting phases you've decided carries an acceptable risk of bankruptcy. Obviously, the lower the chance the lower the profit per round. The faction of your bankroll that you should bet on the first phase should be 1 over the sum of betting phases times your payout. $$\frac{1}{\sum_{n=1}^{phases}payout^{n-1}}.
+If we treat bankroll as `1` and the bet as the initial bet fraction the profit is:
+$$1 - bet + (bet\times payout)$$.
+
+The amount you should bet on the first phase is dependant on how many betting phases you've decided carries an acceptable risk of bankruptcy. Obviously, the lower the chance the lower the profit per round. The faction of your bankroll that you should bet on the first phase should be 1 over the sum of betting phases times your payout.
+$$\frac{1}{\sum_{n=1}^{phases}payout^{n-1}}$$
