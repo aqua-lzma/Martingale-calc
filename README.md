@@ -28,7 +28,16 @@ for n = 1 to phases
 fraction = 1 / sum
 ```
 Math notation:
-<p align="center"><img src="/tex/69aff6635729e896201b951a07ac2380.svg?invert_in_darkmode&sanitize=true" align=middle width=135.85946715pt height=41.0933358pt/></p>
+<p align="center"><img src="/tex/2ac85d760bc2a190727adf30c493c15a.svg?invert_in_darkmode&sanitize=true" align=middle width=222.67727295pt height=41.0933358pt/></p>
 
 Summation:
-<p align="center"><img src="/tex/0e531a317fbd085e7f07679d21e7c495.svg?invert_in_darkmode&sanitize=true" align=middle width=118.3041552pt height=36.1865163pt/></p>
+<p align="center"><img src="/tex/ed325a2c8d30d76054cfb0dc61e452f5.svg?invert_in_darkmode&sanitize=true" align=middle width=205.12196099999997pt height=36.1865163pt/></p>
+
+If you graph this you might notice that the profit is actually higher on lower payouts. This is because you're betting a higher fraction of your bank on higher payouts. But in real life the risk will be higher on larger payouts, so next we work out the actual profit per risk on a specific bet / payout.
+
+The risk of going bankrupt is simply the chance of failure multiplied by itself for each betting phase. Or the fail chance to the power of betting phases.
+<p align="center"><img src="/tex/5436ecc0ba416fd3fa0eefc4402bb3ff.svg?invert_in_darkmode&sanitize=true" align=middle width=201.45553065pt height=33.81208709999999pt/></p>
+
+This makes the risk a bit arbitrary because its defined by how many phases you should do so instead we'll work out how many phases you should do to meet a desired risk thershold.
+<p align="center"><img src="/tex/8a27c350aa049f771eb59819fdf9423a.svg?invert_in_darkmode&sanitize=true" align=middle width=182.80224435pt height=43.0970364pt/></p>
+
