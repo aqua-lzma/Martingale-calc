@@ -33,10 +33,23 @@ fraction = 1 / sum
 ```
 Math notation:
 $$
-\frac{1}{\sum_{n=1}^{phases}payout^{n-1}}
+fraction = \frac{1}{\sum_{n=1}^{phases}payout^{n-1}}
 $$
 
 Summation:
 $$
-\frac{payout-1}{payout^{phases}-1}
+fraction = \frac{payout-1}{payout^{phases}-1}
 $$
+
+If you graph this you might notice that the profit is actually higher on lower payouts. This is because you're betting a higher fraction of your bank on higher payouts. But in real life the risk will be higher on larger payouts, so next we work out the actual profit per risk on a specific bet / payout.
+
+The risk of going bankrupt is simply the chance of failure multiplied by itself for each betting phase. Or the fail chance to the power of betting phases.
+$$
+risk = (\frac{fail chance}{total chance})^phases
+$$
+
+This makes the risk a bit arbitrary because its defined by how many phases you should do so instead we'll work out how many phases you should do to meet a desired risk thershold.
+$$
+phases = -\frac{\log{risk}}{\log{\frac{total chance}{fail chance}}}
+$$
+
