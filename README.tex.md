@@ -29,7 +29,7 @@ The amount you should bet on the first phase is dependant on how many betting ph
 sum = 0
 for n = 1 to phases
   sum = sum + (n * payout)
-fraction = 1 / sum
+bet = 1 / sum
 ```
 Math notation:
 $$
@@ -60,5 +60,5 @@ $$
 
 This makes the risk a bit arbitrary because its defined by how many phases you should do so instead we'll work out how many phases you should do to meet a desired risk thershold.
 $$
-phases = -\frac{\log{risk}}{\log{\frac{total chance}{fail chance}}}
+phases = -\frac{\log({risk})}{\log({\frac{total chance}{fail chance}})}
 $$
